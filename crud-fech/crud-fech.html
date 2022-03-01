@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Api Fech 01</title>
+</head>
+
+<body>
+    <h1>Crud Api Fech 01</h1>
+    <section class="crud">
+        <article>
+            <h2 class="crud-title">Agregar Santo</h2>
+
+            <form class="crud-form">
+                <input type="text" name="nombre" placeholder="nombre" required>
+
+                <input type="text" name="constelacion" placeholder="constelación" required>
+
+                <input type="submit" value="Enviar">
+                <input type="hidden" name="id">
+            </form>
+        </article>
+
+        <article>
+            <h2>Ver Santos</h2>
+            <table class="crud-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Constelación</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </article>
+
+        <template id="crud-template">
+            <tr>
+              <td class="name"></td>
+              <td class="constellation"></td>
+              <td>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+              </td>
+            </tr>
+          </template>
+    </section>
+
+    </section>
+
+    <script src="./crud-fech.js"></script>
+
+</body>
+
+</html>
